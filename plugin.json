@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "filedproof",
+  "version": "0.9.0",
+  "description": "Primary-source SEC filing intelligence for AI agents, with exact evidence, guarded verification, deterministic financial-fact reconciliation, reusable disclosure lineage, cross-company research, and recurring disclosure-change monitoring.",
+  "author": {
+    "name": "Davisville Labs"
+  },
+  "homepage": "https://filedproof.com",
+  "repository": "https://github.com/davisvillelabs/filedproof-cursor-plugin",
+  "keywords": [
+    "sec",
+    "edgar",
+    "filings",
+    "financial-data",
+    "evidence",
+    "research",
+    "mcp"
+  ],
+  "logo": "assets/logo.png"
+}
