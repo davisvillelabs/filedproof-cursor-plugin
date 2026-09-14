@@ -12,7 +12,7 @@ The plugin connects Cursor directly to FiledProof's public Streamable HTTP marke
 
 ## Free capabilities
 
-The Cursor marketplace surface exposes FiledProof operations that are designated free and zero-price in FiledProof's canonical product registry, including capabilities such as:
+The Cursor marketplace surface exposes standalone FiledProof operations that are designated free and zero-price in FiledProof's canonical product registry, including capabilities such as:
 
 - resolving public-company issuers
 - listing recent and bounded historical SEC filings
@@ -23,15 +23,14 @@ The Cursor marketplace surface exposes FiledProof operations that are designated
 - comparing two filings from the same issuer
 - building reusable historical disclosure lineage
 - building cross-company disclosure matrices
-- checking whether a supported quarterly financial fact can be safely reconciled
 
 FiledProof is deliberately conservative. It preserves source provenance, coverage boundaries, uncertainty, and abstains when a result cannot be established safely.
 
 ## Marketplace boundary
 
-This Cursor plugin exposes only no-cost FiledProof operations. Paid and internal FiledProof operations are not listed by this endpoint and cannot be invoked through this plugin.
+This Cursor plugin exposes only standalone no-cost FiledProof research operations. Paid, internal, and paid-flow preflight operations are not listed by this endpoint and cannot be invoked through this plugin.
 
-The free catalog is derived from FiledProof's canonical product registry. When FiledProof adds a new MCP operation that is explicitly classified as free with a zero price, it becomes eligible for this surface. Paid, internal, unregistered, and unknown operations fail closed.
+The free catalog is derived from FiledProof's canonical product registry with strict marketplace exclusions. A new standalone MCP operation explicitly classified as free with a zero price becomes eligible automatically when it follows FiledProof's canonical tool naming convention. Paid, internal, unregistered, unknown, and paid-flow preflight operations fail closed.
 
 Installing or using this plugin does not make a purchase or authorize a payment.
 
