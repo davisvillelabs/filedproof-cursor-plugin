@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "filedproof",
   "version": "0.9.0",
-  "description": "Free primary-source SEC filing research for AI agents, with exact evidence, guarded claim verification, reusable disclosure lineage, cross-company research, and financial-fact eligibility checks.",
+  "description": "Free primary-source SEC filing research for AI agents, with exact evidence, guarded claim verification, reusable disclosure lineage, cross-company research, and filing comparison.",
   "author": {
     "name": "Davisville Labs"
   },
