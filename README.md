@@ -2,17 +2,17 @@
 
 FiledProof is a read-only, primary-source SEC filing intelligence service for AI agents.
 
-It helps an upstream agent perform filing-grounded research without independently retrieving, parsing, aligning, and re-comparing SEC filings.
+This Cursor plugin provides a no-cost FiledProof research surface for filing-grounded work without requiring the agent to independently retrieve, parse, align, and re-compare SEC filings.
 
 ## MCP server
 
-`https://filedproof.com/mcp`
+`https://filedproof.com/mcp/marketplace`
 
-The plugin connects Cursor directly to FiledProof's public Streamable HTTP MCP endpoint. No API key or secret is stored in this repository.
+The plugin connects Cursor directly to FiledProof's public Streamable HTTP marketplace endpoint. No API key, payment credential, or secret is stored in this repository.
 
-## Capabilities
+## Free capabilities
 
-FiledProof exposes tools for:
+The Cursor marketplace surface exposes standalone FiledProof operations that are designated free and zero-price in FiledProof's canonical product registry, including capabilities such as:
 
 - resolving public-company issuers
 - listing recent and bounded historical SEC filings
@@ -23,17 +23,16 @@ FiledProof exposes tools for:
 - comparing two filings from the same issuer
 - building reusable historical disclosure lineage
 - building cross-company disclosure matrices
-- checking whether a quarterly financial fact can be safely reconciled
-- reconciling supported quarterly financial facts from SEC Company Facts and filings
-- monitoring and prioritizing substantive disclosure changes
 
 FiledProof is deliberately conservative. It preserves source provenance, coverage boundaries, uncertainty, and abstains when a result cannot be established safely.
 
-## Free and paid operations
+## Marketplace boundary
 
-Installing this plugin does not make a purchase or authorize payment.
+This Cursor plugin exposes only standalone no-cost FiledProof research operations. Paid, internal, and paid-flow preflight operations are not listed by this endpoint and cannot be invoked through this plugin.
 
-FiledProof includes free research and discovery tools. Some specialist operations may require an explicit machine-payment authorization before execution. Payment authorizes execution only and does not change evidence confidence, verdict strength, research semantics, or source requirements.
+The free catalog is derived from FiledProof's canonical product registry with strict marketplace exclusions. A new standalone MCP operation explicitly classified as free with a zero price becomes eligible automatically when it follows FiledProof's canonical tool naming convention. Paid, internal, unregistered, unknown, and paid-flow preflight operations fail closed.
+
+Installing or using this plugin does not make a purchase or authorize a payment.
 
 ## Important boundaries
 
