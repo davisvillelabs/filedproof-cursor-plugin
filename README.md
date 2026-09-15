@@ -6,7 +6,7 @@ This Cursor plugin provides a no-cost FiledProof research surface for filing-gro
 
 ## MCP server
 
-`https://filedproof.com/mcp/marketplace`
+`https://filedproof.davisvillelabs.com/mcp/marketplace`
 
 The plugin connects Cursor directly to FiledProof's public Streamable HTTP marketplace endpoint. No API key, payment credential, or secret is stored in this repository.
 
@@ -42,7 +42,7 @@ FiledProof reports what companies filed with the U.S. Securities and Exchange Co
 
 Davisville Labs
 
-Website: https://filedproof.com
+Website: https://filedproof.davisvillelabs.com
 
 Source package: https://github.com/davisvillelabs/filedproof-cursor-plugin
 

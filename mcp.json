@@ -3,7 +3,7 @@
   "mcpServers": {
     "filedproof": {
       "type": "streamable-http",
-      "url": "https://filedproof.com/mcp/marketplace"
+      "url": "https://filedproof.davisvillelabs.com/mcp/marketplace"
     }
   }
 }
